@@ -5,26 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
-        <h1>My Website</h1>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="tab-link active" data-tab="home">HOME</a></li>
+                <li><a href="#" class="tab-link" data-tab="travel-blog">TRAVEL BLOG</a></li>
+                <li><a href="#" class="tab-link" data-tab="engineering-projects">ENGINEERING PROJECTS</a></li>
+                <li><a href="#" class="tab-link" data-tab="coding-projects">CODING PROJECTS</a></li>
+                <li><a href="#" class="tab-link" data-tab="contact-me">CONTACT ME</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
-            <h2>Welcome</h2>
-            <p>This is my website. I’ll build something great here.</p>
-            <button id="clickBtn">Click me</button>
-        </section>
+        <div class="tab-content">
+            <section id="tab-home" class="tab-panel active">
+                <h2>Welcome</h2>
+                <p>This is my website. I’ll build something great here.</p>
+            </section>
+
+            <section id="tab-travel-blog" class="tab-panel">
+                <h2>Travel Blog</h2>
+                <p>Adventures and stories from around the world.</p>
+            </section>
+
+            <section id="tab-engineering-projects" class="tab-panel">
+                <h2>Engineering Projects</h2>
+                <p>A showcase of my engineering work.</p>
+            </section>
+
+            <section id="tab-coding-projects" class="tab-panel">
+                <h2>Coding Projects</h2>
+                <p>Software and coding projects I’ve built.</p>
+            </section>
+
+            <section id="tab-contact-me" class="tab-panel">
+                <h2>Contact Me</h2>
+                <p>Get in touch at <a href="mailto:you@example.com">you@example.com</a>.</p>
+            </section>
+        </div>
     </main>
 
     <footer>
