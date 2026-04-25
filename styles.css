@@ -224,11 +224,15 @@ main {
     display: block;
     width: 50%;
     margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .cv-download {
-    display: inline-block;
+    display: block;
     margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0.6rem 1.4rem;
     background: #7b3f00;
     color: white;
@@ -236,6 +240,7 @@ main {
     border-radius: 6px;
     font-family: 'Boogaloo', cursive;
     font-size: 1.1rem;
+    width: fit-content;
 }
 
 /* Contact links */
