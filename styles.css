@@ -9,7 +9,7 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     min-height: 100vh;
-    background: linear-gradient(to bottom right, #d8b4f8, #f5e6d0);
+    background: linear-gradient(to bottom right, #a947ff, #ffca7a);
 }
 
 /* Animations */
@@ -48,6 +48,17 @@ header {
     padding: 1rem 0;
 }
 
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo {
+    height: 50px;
+    margin-right: 1rem;
+    flex-shrink: 0;
+}
+
 nav ul {
     display: flex;
     list-style: none;
@@ -65,7 +76,6 @@ nav ul li:nth-child(1) { animation-delay: 0.0s; }
 nav ul li:nth-child(2) { animation-delay: 0.1s; }
 nav ul li:nth-child(3) { animation-delay: 0.2s; }
 nav ul li:nth-child(4) { animation-delay: 0.3s; }
-nav ul li:nth-child(5) { animation-delay: 0.4s; }
 
 nav a {
     display: block;
@@ -120,22 +130,129 @@ main {
     display: block;
     position: absolute;
     top: 0; left: 0; right: 0;
-    animation: swipeOutLeft 0.35s ease forwards;
+    animation: swipeOutLeft 0.7s ease forwards;
 }
 
 .tab-panel.swipe-out-right {
     display: block;
     position: absolute;
     top: 0; left: 0; right: 0;
-    animation: swipeOutRight 0.35s ease forwards;
+    animation: swipeOutRight 0.7s ease forwards;
 }
 
 .tab-panel.swipe-in-right {
-    animation: swipeInFromRight 0.35s ease forwards !important;
+    animation: swipeInFromRight 0.7s ease forwards !important;
 }
 
 .tab-panel.swipe-in-left {
-    animation: swipeInFromLeft 0.35s ease forwards !important;
+    animation: swipeInFromLeft 0.7s ease forwards !important;
+}
+
+/* Home layout */
+.home-layout {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.home-layout img {
+    flex: 0 0 300px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 32px;
+    margin-left: 20rem;
+}
+
+.home-text {
+    flex: 0 0 700px;
+    max-width: 700px;
+    margin-left: 10rem;
+}
+
+.tagline {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 1.25rem;
+    color: #555;
+    font-size: 14px;
+}
+
+.home-text h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.home-text p {
+    font-size: 22px;
+    margin-bottom: 1rem;
+}
+
+/* Travel blog photo */
+#tab-travel-blog {
+    position: relative;
+}
+
+#tab-travel-blog img {
+    display: block;
+    width: calc(100% + 2rem);
+    margin-left: -2rem;
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 85%);
+    mask-image: linear-gradient(to right, transparent 0%, black 85%);
+}
+
+.home-overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 40%;
+    padding: 1rem;
+}
+
+.home-overlay-text h2 {
+    margin-bottom: 0.75rem;
+}
+
+.home-overlay-text p {
+    margin-bottom: 0.75rem;
+}
+
+/* CV section */
+.cv-preview {
+    display: block;
+    width: 50%;
+    margin-top: 1rem;
+}
+
+.cv-download {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.6rem 1.4rem;
+    background: #7b3f00;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-family: 'Boogaloo', cursive;
+    font-size: 1.1rem;
+}
+
+/* Contact links */
+.contact-links {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.contact-links li {
+    margin-bottom: 0.5rem;
+}
+
+.contact-links a {
+    color: #7b3f00;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-bottom: 1px solid #7b3f00;
 }
 
 /* Footer */
@@ -143,4 +260,21 @@ footer {
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    padding: 0.4rem 1rem;
+    background: #7b3f00;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-family: 'Boogaloo', cursive;
+    font-size: 1rem;
 }
