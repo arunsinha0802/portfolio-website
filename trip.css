@@ -1,0 +1,109 @@
+/* Back link */
+.back-link {
+    color: white;
+    text-decoration: none;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.6rem;
+    padding: 0.5rem 1rem;
+    transition: transform 0.2s ease;
+    display: inline-block;
+    text-shadow: none;
+}
+
+.back-link:hover {
+    transform: scale(1.1);
+}
+
+/* Hero */
+.trip-hero {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    max-height: 480px;
+    margin-bottom: 2.5rem;
+}
+
+.trip-hero-img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    display: block;
+}
+
+.trip-hero-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    background: linear-gradient(to top, rgba(0,0,0,0.65) 0%, transparent 100%);
+    color: white;
+}
+
+.trip-hero-text h1 {
+    font-family: 'Boogaloo', cursive;
+    font-size: 3rem;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+}
+
+.trip-date {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.4rem;
+    margin-top: 0.3rem;
+    opacity: 0.9;
+}
+
+/* Trip body */
+.trip-body {
+    max-width: 860px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.trip-section {
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 16px;
+    padding: 2rem;
+    color: white;
+}
+
+.trip-section h2 {
+    font-family: 'Boogaloo', cursive;
+    font-size: 1.8rem;
+    margin-bottom: 0.75rem;
+}
+
+.trip-section p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+/* Gallery */
+.trip-gallery {
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 16px;
+    padding: 2rem;
+    color: white;
+}
+
+.trip-gallery h2 {
+    font-family: 'Boogaloo', cursive;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.gallery-grid img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 10px;
+}

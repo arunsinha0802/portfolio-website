@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Raleway:wght@400;600&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="bg-circles"></div>
 
     <header>
         <nav>
-            <img src="assets/logo.png" alt="Logo" class="nav-logo">
             <ul>
                 <li><a href="#" class="tab-link active" data-tab="home">HOME</a></li>
                 <li><a href="#" class="tab-link" data-tab="travel-blog">TRAVEL BLOG</a></li>
@@ -38,30 +38,101 @@
             <section id="tab-travel-blog" class="tab-panel">
                 <img src="assets/20260203_143454.jpg" width="100%">
                 <div class="home-overlay-text">
-                    <h2>Hello, I’m Arun!</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <h2>Travel Blog</h2>
+                    <p>Travelling is how I make sense of the world. Every new place brings a fresh perspective, a different way of living, and stories I couldn’t have imagined from home.</p>
+                    <p>This is a collection of the places I’ve been, the things I’ve seen, and the moments that have stayed with me.</p>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-line"><div class="timeline-line-fill"></div></div>
+
+                    <div class="timeline-entry left">
+                        <a href="interrail.html" class="timeline-card" style="background-image: url('');">
+                            <h3>Interrail Trip</h3>
+                        </a>
+                        <div class="timeline-node"><img src="https://flagcdn.com/eu.svg" alt="EU flag"></div>
+                        <div class="timeline-date">Sept 2024</div>
+                    </div>
+
+                    <div class="timeline-entry right">
+                        <div class="timeline-date">Nov 2025</div>
+                        <div class="timeline-node"><img src="https://flagcdn.com/np.svg" alt="Nepal flag"></div>
+                        <a href="kathmandu.html" class="timeline-card" style="background-image: url('');">
+                            <h3>Kathmandu</h3>
+                        </a>
+                    </div>
+
+                    <div class="timeline-entry left">
+                        <a href="nepal-roadtrip.html" class="timeline-card" style="background-image: url('');">
+                            <h3>Nepal Roadtrip - Fieldwork</h3>
+                        </a>
+                        <div class="timeline-node"><img src="https://flagcdn.com/np.svg" alt="Nepal flag"></div>
+                        <div class="timeline-date">
+                            Jan – Feb 2026
+                            <p class="timeline-subtext">check out my vlog on <a href="" target="_blank" rel="noopener noreferrer">YouTube</a></p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-entry right">
+                        <div class="timeline-date">Apr 2026</div>
+                        <div class="timeline-node"><img src="https://flagcdn.com/es.svg" alt="Spain flag"></div>
+                        <a href="alicante.html" class="timeline-card" style="background-image: url('');">
+                            <h3>Alicante</h3>
+                        </a>
+                    </div>
+                    <div class="timeline-end">
+                        <div class="timeline-arrow-down"></div>
+                        <p class="timeline-continued">to be continued...</p>
+                    </div>
                 </div>
             </section>
 
             <section id="tab-projects" class="tab-panel">
                 <h2>Projects</h2>
                 <p>A showcase of my engineering and coding work.</p>
+                <div class="projects-links">
+                    <ul class="contact-links">
+                        <li>Watch my project videos on <a href="https://www.youtube.com/@SoloSojournsTravel" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+                        <li>Check out my code on <a href="https://github.com/arunsinha0802" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                    </ul>
+                </div>
+                <div class="project-cards">
+                    <a href="flight-tracker.html" class="project-card" style="background-image: url('');">
+                        <h3>Flight Tracker</h3>
+                    </a>
+                    <a href="drone.html" class="project-card" style="background-image: url('');">
+                        <h3>Drone</h3>
+                    </a>
+                </div>
             </section>
 
             <section id="tab-contact-me" class="tab-panel">
                 <h2>Contact Me</h2>
                 <p>I’d love to hear from you. Whether you’ve got a project in mind, a question, or just want to connect, feel free to reach out. I’m always open to new opportunities, collaborations, or simply having a chat with like-minded people.</p>
                 <p>The best way to get in touch is via email, and I’ll do my best to get back to you as soon as I can.</p>
-                <ul class="contact-links">
-                    <li>Find all my links on <a href="https://linktr.ee/solosojourn">LinkTree</a></li>
-                    <li>For travel enquiries contact <a href="mailto:solosojournstravel@gmail.com">solosojournstravel@gmail.com</a></li>
-                    <li>For business enquiries contact <a href="mailto:arunsinha0802@gmail.com">arunsinha0802@gmail.com</a></li>
-                    <li>Connect with me on <a href="https://www.linkedin.com/in/arunsinha1">LinkedIn</a></li>
-                    <li>Check out my code on <a href="https://github.com/arunsinha0802">GitHub</a></li>
-                    <li>Follow my travels on <a href="https://www.instagram.com/solosojournstravel">Instagram</a></li>
-                    <li>Watch my videos on <a href="https://www.youtube.com/@SoloSojournsTravel">YouTube</a> or <a href="https://www.tiktok.com/@solosojournstravel">Tiktok</a></li>
-                </ul>
+                <div class="contact-layout">
+                    <ul class="contact-links">
+                        <li>Find all my links on <a href="https://linktr.ee/solosojourn" target="_blank" rel="noopener noreferrer">LinkTree</a></li>
+                        <li>For travel enquiries contact <a href="mailto:solosojournstravel@gmail.com">solosojournstravel@gmail.com</a></li>
+                        <li>For business enquiries contact <a href="mailto:arunsinha0802@gmail.com">arunsinha0802@gmail.com</a></li>
+                        <li>Connect with me on <a href="https://www.linkedin.com/in/arunsinha1" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                        <li>Check out my code on <a href="https://github.com/arunsinha0802" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                        <li>Follow my travels on <a href="https://www.instagram.com/solosojournstravel" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                        <li>Watch my videos on <a href="https://www.youtube.com/@SoloSojournsTravel" target="_blank" rel="noopener noreferrer">YouTube</a> or <a href="https://www.tiktok.com/@solosojournstravel" target="_blank" rel="noopener noreferrer">Tiktok</a></li>
+                    </ul>
+                    <form class="contact-form" action="https://formspree.io/f/meevdvwr" method="POST">
+                        <label>Your Name
+                            <input type="text" name="name" placeholder="Enter name" required>
+                        </label>
+                        <label>Your Email
+                            <input type="email" name="email" placeholder="Enter email" required>
+                        </label>
+                        <label>Your Message
+                            <textarea name="message" placeholder="Enter message" rows="6" required></textarea>
+                        </label>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+
                 <img src="assets/CV - Arun Sinha.jpg" alt="CV preview" class="cv-preview">
                 <a href="assets/CV - Arun Sinha.pdf" download class="cv-download">Download CV</a>
             </section>
@@ -70,11 +141,12 @@
 
     <footer>
         <div class="footer-links">
-            <a href="mailto:">Email</a>
-            <a href="">LinkedIn</a>
-            <a href="">GitHub</a>
-            <a href="">Instagram</a>
-            <a href="">YouTube</a>
+            <a href="mailto:arunsinha0802@gmail.com">Email</a>
+            <a href="https://www.linkedin.com/in/arunsinha1" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://github.com/arunsinha0802" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.instagram.com/solosojournstravel" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://www.youtube.com/@SoloSojournsTravel" target="_blank" rel="noopener noreferrer">YouTube</a>
+            <a href="https://www.tiktok.com/@solosojournstravel" target="_blank" rel="noopener noreferrer">TikTok</a>
         </div>
         <p>© 2026 My Website</p>
     </footer>
