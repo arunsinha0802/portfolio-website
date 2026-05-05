@@ -53,6 +53,110 @@
     opacity: 0.9;
 }
 
+/* Single-box article layout */
+.trip-article {
+    background: rgba(255, 255, 255, 0.45);
+    border-radius: 16px;
+    padding: 2.5rem;
+    color: black;
+}
+
+.trip-article h2 {
+    font-family: 'Boogaloo', cursive;
+    font-size: 1.8rem;
+    margin-bottom: 0.75rem;
+}
+
+.trip-article h3 {
+    font-family: 'Boogaloo', cursive;
+    font-size: 1.35rem;
+    margin-top: 1.75rem;
+    margin-bottom: 0.4rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.trip-article h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    opacity: 0.7;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+.trip-article p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.trip-article p + p {
+    margin-top: 0.75rem;
+}
+
+.trip-article .trip-tagline {
+    font-style: italic;
+    opacity: 0.85;
+}
+
+.trip-article ul {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    padding-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-top: 0.75rem;
+}
+
+.trip-article .trip-toc {
+    list-style: none;
+    padding-left: 0;
+}
+
+.trip-article .trip-toc li a {
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.05rem;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.trip-article .trip-toc li a:hover {
+    color: #444;
+}
+
+.trip-article .trip-faq {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.trip-article .faq-item dt {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 1.05rem;
+    margin-bottom: 0.25rem;
+}
+
+.trip-article .faq-item dd {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    opacity: 0.9;
+    margin-left: 0;
+}
+
+.trip-divider {
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    margin: 2rem 0;
+}
+
 /* Trip body */
 .trip-body {
     max-width: 860px;
@@ -79,6 +183,86 @@
     font-family: 'Raleway', sans-serif;
     font-size: 1.05rem;
     line-height: 1.7;
+}
+
+.trip-section p + p {
+    margin-top: 0.75rem;
+}
+
+.trip-tagline {
+    font-style: italic;
+    opacity: 0.85;
+}
+
+.trip-section h3 {
+    font-family: 'Boogaloo', cursive;
+    font-size: 1.35rem;
+    margin-top: 1.75rem;
+    margin-bottom: 0.4rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.trip-section h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    opacity: 0.7;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+.trip-section ul {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    padding-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-top: 0.75rem;
+}
+
+/* TOC */
+.trip-toc {
+    list-style: none;
+    padding-left: 0;
+}
+
+.trip-toc li a {
+    color: rgba(255, 255, 255, 0.85);
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.05rem;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.trip-toc li a:hover {
+    color: white;
+}
+
+/* FAQ */
+.trip-faq {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.faq-item dt {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 1.05rem;
+    margin-bottom: 0.25rem;
+}
+
+.faq-item dd {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-left: 0;
+    opacity: 0.9;
 }
 
 /* Gallery */

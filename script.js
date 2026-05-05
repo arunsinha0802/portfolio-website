@@ -63,6 +63,50 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
+    // Hamburger menu
+    const hamburgerMenu = document.getElementById("hamburger-menu");
+    const hamburgerBtn  = document.getElementById("hamburger-btn");
+    const hamburgerDropdown = document.getElementById("hamburger-dropdown");
+    const hamburgerTabLinks = document.querySelectorAll(".hamburger-tab-link");
+
+    window.addEventListener("scroll", () => {
+        hamburgerMenu.classList.toggle("visible", window.scrollY > 80);
+    });
+
+    hamburgerBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        const isOpen = hamburgerDropdown.classList.toggle("open");
+        hamburgerBtn.classList.toggle("open", isOpen);
+        hamburgerBtn.setAttribute("aria-expanded", isOpen);
+    });
+
+    document.addEventListener("click", () => {
+        hamburgerDropdown.classList.remove("open");
+        hamburgerBtn.classList.remove("open");
+        hamburgerBtn.setAttribute("aria-expanded", false);
+    });
+
+    function syncHamburgerActive() {
+        hamburgerTabLinks.forEach(l => l.classList.toggle("active", l.dataset.tab === links[currentIndex].dataset.tab));
+    }
+
+    hamburgerTabLinks.forEach(hamburgerLink => {
+        hamburgerLink.addEventListener("click", (e) => {
+            e.preventDefault();
+            hamburgerDropdown.classList.remove("open");
+            hamburgerBtn.classList.remove("open");
+            hamburgerBtn.setAttribute("aria-expanded", false);
+            const target = links.find(l => l.dataset.tab === hamburgerLink.dataset.tab);
+            if (target) target.click();
+        });
+    });
+
+    // Keep hamburger active state in sync with tab clicks
+    links.forEach(link => {
+        link.addEventListener("click", syncHamburgerActive);
+    });
+    syncHamburgerActive();
+
     // Timeline scroll-driven line
     function updateTimelineLine() {
         const fill = document.querySelector(".timeline-line-fill");

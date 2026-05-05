@@ -10,6 +10,20 @@
 <body>
     <div id="bg-circles"></div>
 
+    <div id="hamburger-menu">
+        <button id="hamburger-btn" aria-label="Toggle menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul id="hamburger-dropdown">
+            <li><a href="#" class="hamburger-tab-link" data-tab="home">HOME</a></li>
+            <li><a href="#" class="hamburger-tab-link" data-tab="travel-blog">TRAVEL BLOG</a></li>
+            <li><a href="#" class="hamburger-tab-link" data-tab="projects">PROJECTS</a></li>
+            <li><a href="#" class="hamburger-tab-link" data-tab="contact-me">CONTACT ME</a></li>
+        </ul>
+    </div>
+
     <header>
         <nav>
             <ul>
@@ -25,59 +39,72 @@
         <div class="tab-content">
             <section id="tab-home" class="tab-panel active">
                 <div class="home-layout">
-                    <img src="assets/IMG-20260324-WA0004.jpg">
+                    <img src="assets/home/IMG-20260324-WA0004.jpg">
                     <div class="home-text">
                         <h2>Hello, I’m Arun!</h2>
                         <p class="tagline">Expanding Energy and Education Access | Climate Activist | Electrical Engineer | Travel Vlogger</p>
                         <p>I’m a university student who loves travelling, building things, and exploring new ideas both in and outside the classroom. I’m naturally curious, resilient and adventurous. I want to live life to the fullest. I have big ambitious ideas and this website is where I share a sliver of my projects, travels, and a bit of that journey along the way.</p>
-                        <p>At the moment, I’m on a gap year, spending time travelling, slowing down, and gaining new perspectives from different places and experiences. It’s been a chance to step back, appreciate the present, and come back with a clearer mindset. </p>
+                        <p>At the moment, I’m on a gap year, spending time travelling, slowing down, and gaining new perspectives from different places and experiences. It’s been a chance to step back, appreciate the present, and come back to my Masters Yearwith a clearer mindset. </p>
                     </div>
                 </div>
             </section>
 
             <section id="tab-travel-blog" class="tab-panel">
-                <img src="assets/20260203_143454.jpg" width="100%">
+                <img src="assets/travel-blog/20260203_143454.jpg" width="100%">
                 <div class="home-overlay-text">
-                    <h2>Travel Blog</h2>
-                    <p>Travelling is how I make sense of the world. Every new place brings a fresh perspective, a different way of living, and stories I couldn’t have imagined from home.</p>
-                    <p>This is a collection of the places I’ve been, the things I’ve seen, and the moments that have stayed with me.</p>
+                    <h2>'Richness lies in my experiences'</h2>
+                    <p>Like most people I love travelling. But I'm not into hotels, beaches and cocktails. I want to jump off bridges and stowaway in trains and live in the countryside with the locals because THAT is how you learn new cultures and make the most of your knees whilst you have them. Backpacking is my facourite way to travel. It teaches you resourcefullness and how to act on the fly. It's one of those things you can only learn with life experience and not in a classroom. And I plan on gaining as much life experience as I can.</p>
+                    <p>Don't get me wrong, I still love the occasional European city break, with my mates, parents or girlfriend. Nothing beats a bit of sightseeing and drinks in the Mediterranean sun on the beach.</p>
+                    <p>In this section I'll share both my crazy experiences and usual city breaks with you. Many people live with the idea that travelling is expensive, but as a broke university student with experience in a travel agency, I'll share with you all the little tips that make my lifestyle possible.</p>
                 </div>
                 <div class="timeline">
                     <div class="timeline-line"><div class="timeline-line-fill"></div></div>
 
                     <div class="timeline-entry left">
-                        <a href="interrail.html" class="timeline-card" style="background-image: url('');">
+                        <div class="timeline-card coming-soon" style="background-image: url('');">
+                            <span class="coming-soon-banner">Coming Soon</span>
                             <h3>Interrail Trip</h3>
-                        </a>
+                        </div>
                         <div class="timeline-node"><img src="https://flagcdn.com/eu.svg" alt="EU flag"></div>
                         <div class="timeline-date">Sept 2024</div>
                     </div>
 
                     <div class="timeline-entry right">
-                        <div class="timeline-date">Nov 2025</div>
-                        <div class="timeline-node"><img src="https://flagcdn.com/np.svg" alt="Nepal flag"></div>
-                        <a href="kathmandu.html" class="timeline-card" style="background-image: url('');">
-                            <h3>Kathmandu</h3>
-                        </a>
+                        <div class="timeline-date">Sept 2025</div>
+                        <div class="timeline-node"><img src="https://flagcdn.com/gb-eng.svg" alt="England flag"></div>
+                        <div class="timeline-card coming-soon" style="background-image: url('');">
+                            <span class="coming-soon-banner">Coming Soon</span>
+                            <h3>England Roadtrip</h3>
+                        </div>
                     </div>
 
                     <div class="timeline-entry left">
-                        <a href="nepal-roadtrip.html" class="timeline-card" style="background-image: url('');">
-                            <h3>Nepal Roadtrip - Fieldwork</h3>
-                        </a>
+                        <div class="timeline-card coming-soon" style="background-image: url('');">
+                            <span class="coming-soon-banner">Coming Soon</span>
+                            <h3>Kathmandu</h3>
+                        </div>
                         <div class="timeline-node"><img src="https://flagcdn.com/np.svg" alt="Nepal flag"></div>
+                        <div class="timeline-date">Nov 2025</div>
+                    </div>
+
+                    <div class="timeline-entry right">
                         <div class="timeline-date">
                             Jan – Feb 2026
                             <p class="timeline-subtext">check out my vlog on <a href="" target="_blank" rel="noopener noreferrer">YouTube</a></p>
                         </div>
+                        <div class="timeline-node"><img src="https://flagcdn.com/np.svg" alt="Nepal flag"></div>
+                        <div class="timeline-card coming-soon" style="background-image: url('');">
+                            <span class="coming-soon-banner">Coming Soon</span>
+                            <h3>Nepal Roadtrip - Fieldwork</h3>
+                        </div>
                     </div>
 
-                    <div class="timeline-entry right">
-                        <div class="timeline-date">Apr 2026</div>
-                        <div class="timeline-node"><img src="https://flagcdn.com/es.svg" alt="Spain flag"></div>
+                    <div class="timeline-entry left">
                         <a href="alicante.html" class="timeline-card" style="background-image: url('');">
                             <h3>Alicante</h3>
                         </a>
+                        <div class="timeline-node"><img src="https://flagcdn.com/es.svg" alt="Spain flag"></div>
+                        <div class="timeline-date">Apr 2026</div>
                     </div>
                     <div class="timeline-end">
                         <div class="timeline-arrow-down"></div>
@@ -96,12 +123,14 @@
                     </ul>
                 </div>
                 <div class="project-cards">
-                    <a href="flight-tracker.html" class="project-card" style="background-image: url('');">
+                    <div class="project-card coming-soon" style="background-image: url('');">
+                        <span class="coming-soon-banner">Coming Soon</span>
                         <h3>Flight Tracker</h3>
-                    </a>
-                    <a href="drone.html" class="project-card" style="background-image: url('');">
+                    </div>
+                    <div class="project-card coming-soon" style="background-image: url('');">
+                        <span class="coming-soon-banner">Coming Soon</span>
                         <h3>Drone</h3>
-                    </a>
+                    </div>
                 </div>
             </section>
 
@@ -133,8 +162,8 @@
                     </form>
                 </div>
 
-                <img src="assets/CV - Arun Sinha.jpg" alt="CV preview" class="cv-preview">
-                <a href="assets/CV - Arun Sinha.pdf" download class="cv-download">Download CV</a>
+                <img src="assets/contact-me/CV - Arun Sinha.jpg" alt="CV preview" class="cv-preview">
+                <a href="assets/contact-me/CV - Arun Sinha.pdf" download class="cv-download">Download CV</a>
             </section>
         </div>
     </main>
