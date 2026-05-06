@@ -297,11 +297,12 @@ main {
 }
 
 /* Travel blog photo */
-#tab-travel-blog {
-    position: relative;
+.travel-blog-hero {
+    display: grid;
 }
 
-#tab-travel-blog > img {
+.travel-blog-hero > img {
+    grid-area: 1 / 1;
     display: block;
     width: calc(100% + 2rem);
     margin-left: -2rem;
@@ -310,11 +311,11 @@ main {
 }
 
 .home-overlay-text {
-    position: absolute;
-    top: 0;
-    left: 0;
+    grid-area: 1 / 1;
+    align-self: start;
     width: 40%;
     padding: 1rem;
+    z-index: 1;
 }
 
 .home-overlay-text h2 {
@@ -325,7 +326,7 @@ main {
 
 .home-overlay-text p {
     margin-bottom: 1rem;
-    font-size: 24px
+    font-size: 24px;
 }
 
 /* Timeline */
@@ -590,7 +591,7 @@ main {
     flex-direction: column;
     gap: 1rem;
     width: 840px;
-    background: #d0eaf8;
+    background: rgba(208, 234, 248, 0.75);
     padding: 1.5rem;
     border-radius: 16px;
 }
@@ -676,7 +677,7 @@ main {
 /* Contact links */
 .contact-links {
     list-style: none;
-    background: #d0eaf8;
+    background: rgba(208, 234, 248, 0.75);
     padding: 1.5rem;
     border-radius: 16px;
     width: 840px;
