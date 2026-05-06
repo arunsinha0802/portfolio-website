@@ -796,24 +796,75 @@ footer {
 /* Mobile */
 @media (max-width: 600px) {
     main { padding: 1rem; }
-    nav a { font-size: 12px; padding: 0.3rem 0; }
-    nav a.active { font-size: 15px; }
+
+    /* Hamburger always visible on mobile; hide regular nav */
+    #hamburger-menu {
+        transform: translateX(0);
+        pointer-events: all;
+    }
+    nav ul { display: none; }
+    header { padding: 0.25rem 0; }
+
+    /* Home text */
+    .home-text p { font-size: 17px; }
+
+    /* Travel blog hero: stack image above text */
+    .travel-blog-hero { display: block; }
+    .travel-blog-hero > img {
+        width: calc(100% + 2rem);
+        margin-left: -1rem;
+        -webkit-mask-image: none;
+        mask-image: none;
+    }
     .home-overlay-text {
-        width: 60%;
-        padding: 0.5rem;
+        width: 100%;
+        padding: 1rem 0;
     }
-    .home-overlay-text h2 { font-size: 20px; }
+    .home-overlay-text h2 { font-size: 22px; }
     .home-overlay-text p {
-        font-size: 11px;
-        margin-bottom: 0.5rem;
+        font-size: 15px;
+        margin-bottom: 0.6rem;
     }
-    .timeline { padding: 1rem; }
-    .timeline-entry { grid-template-columns: 1fr 28px 1fr; }
+
+    /* Timeline: single column */
+    .timeline {
+        padding: 1rem 0.5rem;
+        margin-top: 2rem;
+    }
+    .timeline-line { display: none; }
+    .timeline-entry {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        margin: 2rem 0;
+    }
+    /* Reorder left entries so date appears above card */
+    .timeline-entry.left .timeline-date { order: 1; text-align: center; }
+    .timeline-entry.left .timeline-node { order: 2; }
+    .timeline-entry.left .timeline-card { order: 3; }
+    .timeline-entry.right .timeline-date { text-align: center; }
+
+    .timeline-card { width: 100%; }
+    /* No horizontal translate on mobile — cards just fade in */
+    .timeline-entry.left .timeline-card,
+    .timeline-entry.right .timeline-card { translate: 0 0; }
+    .timeline-entry.left .timeline-card::after,
+    .timeline-entry.right .timeline-card::after { display: none; }
+
     .timeline-date {
-        font-size: 0.85rem;
+        font-size: 1.1rem;
         padding: 0.3rem;
     }
+
+    /* Projects */
+    .project-card { width: 95%; }
+    .projects-links .contact-links { width: 100%; max-width: 100%; }
+
+    /* CV */
     .cv-preview { width: 90%; }
+
+    /* Footer */
     .footer-links {
         flex-wrap: wrap;
         gap: 0.5rem;

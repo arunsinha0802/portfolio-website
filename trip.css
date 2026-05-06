@@ -291,3 +291,22 @@
     object-fit: cover;
     border-radius: 10px;
 }
+
+.trip-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1.5rem;
+    margin-top: 0.75rem;
+}
+
+@media (max-width: 600px) {
+    .trip-article {
+        padding: 1.25rem;
+    }
+    .trip-article h2 {
+        font-size: 1.4rem;
+    }
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}
